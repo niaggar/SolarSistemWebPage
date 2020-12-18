@@ -1,0 +1,96 @@
+
+
+.container-social {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 30px;
+  box-shadow: 0 0 5px #ffffff;
+  border-radius: 5px;
+}
+
+#boton-enviarmail {
+  color: #fff;
+  border: 2px solid #ffffff;
+  background: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+  padding: 8px;
+}
+
+#formulario > input { 
+  margin: 10px 0;
+  height: 38px;
+  width: 100%;
+  font-size: 16px;
+}
+
+#formulario input[type = 'text'], #formulario input[type = 'email'] {
+  color: #000000;
+}
+
+#formulario > h2{
+  margin: 15px;
+}
+
+#formulario >textarea {
+  margin: 10px 0;
+  height: 190px;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+}
+
+#boton-enviarmail:hover {
+  background: #ffffff2c;
+}
+
+.container-succes { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.social-icons h2 {
+  font-size: 20px;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons li {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 700px ){
+  #formulario {
+    width: 100%;
+    padding: 10px;
+  }
+}

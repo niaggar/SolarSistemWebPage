@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('./partials/head.html') %>   
+  <link rel="stylesheet" href="/styles/contact.css">
+</head>
+<body>
+  <div class="container">
+    <div class="titulo" id="principal">
+    <!-- NAVEGACION -->
+    <nav class="nav-prin" id="inicio">
+      <div class="nav-izq">
+        <ul>
+          <li>
+            <a href="/" id="desplegable-plant"><i class="fas fa-rocket"></i></a> 
+            <ul>
+              <li><a href="/#mercurio">Mercurio</a></li>
+              <li><a href="/#venus">Venus</a></li>
+              <li><a href="/#tierra">Tierra</a></li>
+              <li><a href="/#marte">Marte</a></li>
+              <li><a href="/#jupiter">Jupiter</a></li>
+              <li><a href="/#saturno">Saturno</a></li>
+              <li><a href="/#urano">Urano</a></li>
+              <li><a href="/#neptuno">Neptuno</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-der">
+        <ul>
+          <li>
+            <a href="/info">Info</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- SOL DE FONDO -->
+    <img src="/img/planetas/Sol.svg" alt="Ilustración del sol" id="sol">
+    <!-- TITULO -->
+    <span>
+      <h1 id="titulo-pagina">Contacto</h1> 
+      <h2 id="subtitulo-pagina">Encuentrame en...</h2>
+    </span>
+    <!-- ICONO CONTINUAR -->
+    <a href="#formulario" class="arrow-icon"><i class="fas fa-angle-down"></i></a>
+    </div>
+
+    <div class="container-social">
+      <form id="formulario" action="/send-email" method="POST">
+        <h2>Envia un correo...</h2>
+        <input type="text" name="nombre" placeholder="¿Cual es tu nombre?" required>
+        <input type="email" name="correo" placeholder="¿Cual es tu correo electronico?" required>
+        <textarea name="mensaje" placeholder="Escribe aqui tu mensaje..." required></textarea>
+        <input type="submit" value="ENVIAR" id="boton-enviarmail">
+      </form>
+      <div class="social-icons">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/niclson256"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/print.sr_nick/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/PrintSrNick"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/nicolas-aguilera-6a48551a2"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER DE LA PAGINA -->
+  <%- include('./partials/footer.html') %>     
+
+</body>
+</html>

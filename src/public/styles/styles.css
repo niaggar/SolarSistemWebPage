@@ -1,0 +1,365 @@
+
+/* Config general */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #01050f;
+}
+
+h1, h2, h3, a {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Config navbar */
+
+.nav-prin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 25px;
+  z-index: 2;
+}
+
+.nav-izq {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-izq ul {
+  display: inline;
+}
+
+.nav-izq ul li {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0px;
+}
+
+.nav-izq > ul > li:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.nav-izq > ul > li > ul > li:hover {
+  background: #ffffff7e;
+}
+
+.nav-izq ul li:hover ul {
+  display: block;
+}
+
+.nav-izq ul li ul {
+  position: absolute;
+  width: 180px;
+  display: none;
+}
+
+.nav-izq ul li ul li { 
+  background: #01050f;
+  box-shadow: 0 0 10px #ffffff;
+  display: block; 
+}
+
+.nav-izq ul li ul li a {
+  display: block !important;
+} 
+
+ul li ul li:hover {
+  background: #ffffff52;
+}
+
+.nav-der ul {
+  display: flex;
+}
+
+.nav-der li {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.nav-der li:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Config titulo */
+
+.titulo {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo span {
+  z-index: 1;
+  text-align: center;
+}
+
+.titulo h1 {
+  font-size: 85px;
+  font-weight: 300;
+}
+
+.titulo h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.arrow-icon {
+  z-index: 1;
+}
+
+.arrow-icon > i {
+  font-size: 40px;
+  color: #ffffff31;
+  padding: 20px;
+}
+
+.arrow-icon > i:hover {
+  color: #ffffff;
+}
+
+/* Config fondo sol del titulo */
+
+#sol {
+  z-index: 0;
+  position: absolute;
+  top: -600px;
+  width: 100%;
+}
+
+/* Config banner de contenido */
+
+.banner-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+
+.banner-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+
+.banner-1 h1, p, a {
+  margin: 10px;
+}
+
+.banner-2 h1, p, a {
+  margin: 10px;
+}
+
+.banner-1 img, .banner-2 img {
+  width: 550px;
+}
+
+.banner-1 > div {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 35%;
+}
+
+.banner-2 > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 35%;
+}
+
+.banner-1 > div > a {
+  border-radius: 5px;
+  width: fit-content;
+  padding: 8px;
+  align-self: flex-end;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+}
+
+.banner-1 > div > a:hover {
+  background: #ffffff46;
+}
+
+.banner-2 > div > a {
+  border-radius: 5px;
+  width: fit-content;
+  padding: 8px;
+  align-self: flex-start;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+}
+
+.banner-2 > div > a:hover {
+  background: #ffffff46;
+}
+
+/* Config pie de pagina */
+
+.prin-footer {
+  width: 100%;
+  background-color: #ffffff15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prin-footer > a {
+  font-size: 30px;
+}
+
+.prin-footer > hr {
+  width: 80%;
+}
+
+.footer {
+  height: 80px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer a {
+  font-weight: normal;
+}
+
+/* Cofig del responsive */
+
+@media only screen and (max-width: 1100px ){
+
+  #sol {
+    top: -360px;
+    width: 100%;
+  }
+
+  .banner-1 img, .banner-2 img {
+    width: 500px;
+  }
+
+}
+
+@media only screen and (max-width: 900px ){
+
+  #sol {
+    z-index: 0;
+    position: absolute;
+    top: -400px;
+    width: 120%;
+  }
+
+  .banner-1, .banner-2{
+    flex-direction: column-reverse;
+  }
+  
+  .banner-1 img, .banner-2 img {
+    width: 500px;
+  }
+
+  .banner-1 h1, p, .banner-2 h1, p {
+    width: 500px;
+  }
+  
+  .banner-1 > div, .banner-2 > div {
+    width: auto;
+  }
+
+  .prin-footer {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 750px ){
+  #sol {
+    z-index: 0;
+    position: absolute;
+    top: -200px;
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 600px ){
+  
+  .banner-1, .banner-2 {
+    width: 100%;
+    margin: auto
+  }
+
+  .banner-1 > div, .banner-2 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-2 div > p, .banner-2 div > h1, .banner-2 div > a{
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+
+  .banner-1 div > p, .banner-1 div > h1, .banner-1 div > a{
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px ){
+  #sol {
+    z-index: 0;
+    position: absolute;
+    top: -50px;
+    width: 120%;
+  }
+
+  #titulo-pagina {
+    font-size: 45px;
+  }
+
+  #subtitulo-pagina {
+    font-size: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 450px ){
+  #sol {
+    z-index: 0;
+    position: absolute;
+    top: 30px;
+    width: 120%;
+  }
+
+
+}
+

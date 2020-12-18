@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('./partials/head.html') %>
+    <link rel="stylesheet" href="/styles/info.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo" id="principal">
+        <!-- NAVEGACION -->
+        <nav class="nav-prin" id="inicio">
+          <div class="nav-izq">
+            <ul>
+              <li>
+                <a href="/" id="desplegable-plant"><i class="fas fa-rocket"></i></a>
+                <ul>
+                  <li><a href="/#mercurio">Mercurio</a></li>
+                  <li><a href="/#venus">Venus</a></li>
+                  <li><a href="/#tierra">Tierra</a></li>
+                  <li><a href="/#marte">Marte</a></li>
+                  <li><a href="/#jupiter">Jupiter</a></li>
+                  <li><a href="/#saturno">Saturno</a></li>
+                  <li><a href="/#urano">Urano</a></li>
+                  <li><a href="/#neptuno">Neptuno</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-der">
+            <ul>
+              <li>
+                <a href="/info">Info</a>
+              </li>
+              <li>
+                <a href="/contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- SOL DE FONDO -->
+        <img src="/img/planetas/Sol.svg" alt="Ilustración del sol" id="sol" />
+        <!-- TITULO -->
+        <span>
+          <h1 id="titulo-pagina">Información</h1>
+          <h2 id="subtitulo-pagina"> Pero... ¿quien soy?</h2>
+        </span>
+        <!-- ICONO CONTINUAR -->
+        <a href="#contpres" class="arrow-icon"><i class="fas fa-angle-down"></i></a>
+      </div>
+
+      <div class="section">
+        <div class="sect-columns">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-presentacion" id="contpres">
+      <img src="/img/perfilNicolas.jpg" alt="Foto de Nicolas">
+      <div class="contenido-texto">
+        <p id="presentacion">
+          ¡Hola!<br>
+          Soy <span>Nicolas Aguilera García</span>, un joven estudiante que esta por aventurararse a la universidad y aunque mi pasion es la Fisica, la progracacion y la tecnologia me encantan. <br>
+          Por ese motivo diseñe este sitio web, ademas de paso me sirve como proyecto final para completar el curso RUTA 1 de MISION TIC 2022. <br>
+          Este proyecto lo realice a punta de HTML, CSS, JS, NODEJS y otras tecnologias y programas como Ilustrator para diseñar los planetas... <br>
+          Y también, muchos videos...
+        </p>
+        <a href="">Más proyectos proccimamente...</a>
+      </div>
+    </div>
+
+    <!-- FOOTER DE LA PAGINA -->
+    <%- include('./partials/footer.html') %>
+  </body>
+</html>

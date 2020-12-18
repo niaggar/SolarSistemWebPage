@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('./partials/head.html') %>
+  <link rel="stylesheet" href="./styles/modal.css"> 
+</head>
+<body>
+  <div class="container">
+    <!-- TITULO Y NAVEGACION DE LA PAGINA -->
+    <div class="titulo" id="principal">
+      <!-- NAVEGACION -->
+      <nav class="nav-prin" id="inicio">
+        <div class="nav-izq">
+          <ul>
+            <li>
+              <a href="/" id="desplegable-plant"><i class="fas fa-rocket"></i></a> 
+              <ul>
+                <li><a href="/#mercurio">Mercurio</a></li>
+                <li><a href="/#venus">Venus</a></li>
+                <li><a href="/#tierra">Tierra</a></li>
+                <li><a href="/#marte">Marte</a></li>
+                <li><a href="/#jupiter">Jupiter</a></li>
+                <li><a href="/#saturno">Saturno</a></li>
+                <li><a href="/#urano">Urano</a></li>
+                <li><a href="/#neptuno">Neptuno</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-der">
+          <ul>
+            <li>
+              <a href="/info">Info</a>
+            </li>
+            <li>
+              <a href="/contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- SOL DE FONDO -->
+      <img src="/img/planetas/Sol.svg" alt="Ilustración del sol" id="sol">
+      <!-- TITULO -->
+      <span>
+        <h1 id="titulo-pagina">Sistema Solar</h1> 
+        <h2 id="subtitulo-pagina">Despeguemos...</h2>
+      </span>
+      <!-- ICONO CONTINUAR -->
+      <a href="#mercurio" class="arrow-icon"><i class="fas fa-angle-down"></i></a>
+    </div>
+    <!-- 
+      CONTENDIDO DE LA PAGINA
+      -Espacio para cada planeta. Su nombre, su imagen, una descripción y un boton para ver mas info y realizar la conversión.
+     -->
+    <div class="banner-1" id="mercurio">
+      <div>
+        <h1>Mercurio</h1>
+        <p>
+          El planeta más cercano al Sol y el segundo más pequeño del Sistema Solar. Es menor que la Tierra, pero más grande que la Luna y su superficie es semejante a esta.
+        </p>
+        <a href="" class="cta" id="btn-mercurio">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_mercurio.svg" alt="Ilustración de Mercurio">
+    </div>
+  
+    <div class="banner-2" id="venus">
+      <div>
+        <h1>Venus</h1>
+        <p>
+          El planeta más semejante a la Tierra en su tamaño, masa, densidad y volumen, además de ser hermanos por formarse a partir de la misma nebulosa. En la superficie se encuentran amplísimas llanuras, atravesadas por enormes ríos de lava, y algunas montañas.
+        </p>
+        <a href="" class="cta" id="btn-venus">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_venus.svg" alt="Ilustración de Venus">
+    </div>
+  
+    <div class="banner-1" id="tierra">
+      <div>
+        <h1>Tierra</h1>
+        <p>
+          Es nuestro planeta y el único habitado. Está justo en el espacio que rodea al Sol que tiene las condiciones necesarias para que exista vida. La Tierra es el mayor de los planetas rocosos lo que le otorga una amplia atmosfera. 
+        </p>
+        <a href="" class="cta" id="btn-tierra">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_tierra.svg" alt="Ilustración de la Tierra">
+    </div>
+  
+    <div class="banner-2" id="marte">
+      <div>
+        <h1>Marte</h1>
+        <p>
+          Cuarto planeta del Sistema Solar. Conocido como el planeta rojo por sus tonos rosados, los romanos lo identificaban con la sangre y le pusieron el nombre de su dios de la guerra.
+        </p>
+        <a href="" class="cta" id="btn-marte">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_marte.svg" alt="Ilustración de Marte">
+    </div>
+  
+    <div class="banner-1" id="jupiter">
+      <div>
+        <h1>Jupiter</h1>
+        <p>
+          El planeta más grande del Sistema Solar, tiene más materia que todos los demás planetas juntos y su volumen es mil veces el de la Tierra. Júpiter tiene un tenue sistema de anillos, invisible desde la Tierra. 
+        </p>
+        <a href="" class="cta" id="btn-jupiter">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_jupiter.svg" alt="Ilustración de Jupiter">
+    </div>
+  
+    <div class="banner-2" id="saturno">
+      <div>
+        <h1>Saturno</h1>
+        <p>
+          El segundo planeta más grande del Sistema Solar y el único con anillos visibles desde la Tierra. Es achatado en los polos a causa de la rápida rotación. 
+        </p>
+        <a href="" class="cta" id="btn-saturno">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_saturno.svg" alt="Ilustración de Saturno">
+    </div>
+  
+    <div class="banner-1" id="urano">
+      <div>
+        <h1>Urano</h1>
+        <p>
+          Es el séptimo planeta desde el Sol y el tercero más grande del Sistema Solar. Urano es también el primero que se descubrió gracias al telescopio. Está tan lejos que, desde Urano, el Sol parece una estrella más. Aunque, mucho más brillante que las otras.
+        </p>
+        <a href="" class="cta" id="btn-urano">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_urano.svg" alt="Ilustración de urano">
+    </div>
+  
+    <div class="banner-2" id="neptuno">
+      <div>
+        <h1>Neptuno</h1>
+        <p>
+          Es el planeta más exterior de los gigantes gaseosos y el primero que fue descubierto gracias a predicciones matemáticas. El interior de Neptuno es roca fundida junto con agua, metano y amoníaco líquidos.
+        </p>
+        <a href="" class="cta" id="btn-neptuno">Más info...</a>
+      </div>
+      <img src="/img/planetas/planeta_neptuno.svg" alt="Ilustración de Neptuno">
+    </div>
+  </div>
+  
+  <!-- VENTANA MODAL -->
+  <%- include('./partials/modalPrin.html') %>
+  <%- include('./partials/modalSec.html') %> 
+
+  <!-- FOOTER DE LA PAGINA -->
+  <%- include('./partials/footer.html') %>     
+
+  <!-- SCRIPTS JS -->
+  <script src="/code/global-v.js"></script>
+  <script src="/code/eventListener.js"></script>
+  <script src="/code/functions.js"></script>
+  <script src="/code/modal.js"></script>
+
+</body>
+</html>

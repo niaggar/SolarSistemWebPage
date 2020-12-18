@@ -1,0 +1,223 @@
+
+/* ESTILOS VENTANAS MODALES */
+
+/* Modal Principal */
+.modal-container {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 70%;
+  height: 70%;
+  background: #01050f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #fff;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+}
+
+.modal-close {
+  transform: translateY(+200%);
+}
+
+.imagen-modal {
+  width: 40%;
+  overflow: hidden;
+}
+
+#img-modal {
+  width: 100%;
+}
+
+.container-modal {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal-textos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.close { 
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.452);
+  cursor: pointer;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+.modal-textos > table {
+  margin-top: 15px;
+}
+
+.modal-textos > small {
+  margin-top: 6px;
+}
+
+.modal-textos > h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario input[type = 'text'] {
+  color: #01050f;
+  border: 2px solid #fff;
+  background-color: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  width: 50%;
+  height: 34px;
+  border-radius: 5px;
+}
+
+.formulario input[type = 'button'] {
+  color: #fff;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: 'Source Code Pro', monospace;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 5px;
+  padding: 8px;
+}
+
+.formulario input[type = 'button']:hover {
+  background: #ffffff46;
+}
+
+/* Modal Secundario */
+.modal2-container {
+  visibility: hidden;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal2 {
+  width: 30%;
+  height: 30%;
+  background: #01050f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #fff;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+}
+
+.modal2-close {
+  transform: translateY(+200%);
+}
+
+.container2-modal {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal2-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal2-textos p {
+  width: 98%;
+}
+
+.close2 { 
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.452);
+  cursor: pointer;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.close2:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px ) {
+  .modal {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px ) {
+  .modal {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .modal-container {
+    flex-direction: column;
+  }
+}
